@@ -1,0 +1,8 @@
+Classe - é a descrição de um objeto ou grupo de objetos:
+	Nome da classe
+	Conjunto de atributos (descrição)
+	Conjunto de métodos (comportamentos)
+	
+Herança - Permite reutilização da estrutura e do comportamento de uma classe
+
+Polimosfismo - habilidade de variáveis terem "mais de um tipo"
