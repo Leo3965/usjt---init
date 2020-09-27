@@ -12,19 +12,14 @@ class MatrazIdentidade {
 		
 		int[][] matrazIdentidade = new int[num][num];
 		
-		for(int i = 0; i < matrazIdentidade.length; i++) {
-			for (int j = 0; j < matrazIdentidade.length; j++) {
-				if(i == j) {
-					matrazIdentidade[i][j] = 1;
-				}
-				
-				System.out.print(matrazIdentidade[i][j] + " ");
-			}
+		ExibeMatriz.exibeMatriz(matrazIdentidade);
 		
-		sc.close();
 			
+		sc.close();
 		}
 	
-	}
 }
+
+
+
 
