@@ -13,7 +13,7 @@ public class carro {
 	}
 	
 	public void acelerar(String acelerador){
-		System.out.println(" O carro irá aumentar sua valocidade em " + getAcelerador() + " K/h");
+		System.out.println(" O carro irá aumentar sua valocidade em  K/h");
 		
 	}
 	
@@ -29,7 +29,7 @@ public class carro {
 		getFarol();
 		
 	}
-
+	String farol;
 	public String getFarol() {
 		return farol;
 	}
