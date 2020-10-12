@@ -17,8 +17,11 @@ public class MetodosSistemas {
 		System.out.println(olaMundo);
 		
 		String espacos = "i s p a ç o";
+		String i = "i i i";
 		String semEspacos = espacos.replace('i', 'e');
+		String semI = i.replace('i', 'e');
 		System.out.println(semEspacos);
+		System.out.println(semI);
 		
 		semEspacos = semEspacos.replaceAll(" ","");
 		System.out.println(semEspacos);
