@@ -8,8 +8,8 @@ public class TesteDoAvaliador {
 
 	@Test
 	public void main() {
-		Usuario joao = new Usuario("João");
-		Usuario jose = new Usuario("José");
+		Usuario joao = new Usuario("Joï¿½o");
+		Usuario jose = new Usuario("Josï¿½");
 		Usuario maria = new Usuario("Maria");
 
 		Leilao leilao = new Leilao("Playstation 3 Novo");
