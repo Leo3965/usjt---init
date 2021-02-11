@@ -21,7 +21,7 @@ public class Leilao {
 	}
 
 	public List<Lance> getLances() {
-		return lances;
+		return this.lances;
 	}
 
 	public void setLances(List<Lance> lances) {
@@ -29,8 +29,29 @@ public class Leilao {
 	}
 
 	public void propoe(Lance lance) {
-		this.lances.add(lance);
-		
+
+		if (lances.isEmpty() || podeDarLance(lance.getUsuario())) {
+			this.lances.add(lance);
+
+		}
+
+	}
+
+	private boolean podeDarLance(Usuario usuario) {
+		return !ultimoLanceDado().getUsuario().equals(usuario) && qtdDeLancesDo(usuario) > 5;
+	}
+
+	private int qtdDeLancesDo(Usuario usuario) {
+		int total = 0;
+		for (Lance l : lances) {
+			if (l.getUsuario().equals(usuario))
+				total++;
+		}
+		return total;
+	}
+
+	private Lance ultimoLanceDado() {
+		return this.lances.get(lances.size() - 1);
 	}
 
 }

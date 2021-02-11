@@ -1,8 +1,7 @@
 package br.com.alura.junit;
 
 import org.junit.Test;
-
-import junit.framework.Assert;
+import org.junit.Assert;
 
 public class TesteDoAvaliador {
 
