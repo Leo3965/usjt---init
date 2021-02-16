@@ -1,18 +1,21 @@
-package ExerciciosSemana5;
+package br.usjt.ExerciciosSemana5;
 
 class LivroDeNotas {
-	
+
 	private String nomeDoCurso;
-	
-	public LivroDeNotas (String nomeDoCurso){
+
+	public LivroDeNotas(String nomeDoCurso) {
 		this.nomeDoCurso = nomeDoCurso;
 	}
-	public void exibirMensagem (){
+
+	public void exibirMensagem() {
 		System.out.println("Bem vindo ao livro de notas do curso " + getNomeDoCurso());
 	}
+
 	public String getNomeDoCurso() {
 		return nomeDoCurso;
 	}
+
 	public void setNomeDoCurso(String nomeDoCurso) {
 		this.nomeDoCurso = nomeDoCurso;
 	}

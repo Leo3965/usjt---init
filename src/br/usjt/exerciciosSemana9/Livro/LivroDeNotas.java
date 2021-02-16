@@ -1,4 +1,5 @@
-package exerciciosSemana9.Livro;
+package br.usjt.exerciciosSemana9.Livro;
+
 import java.util.Random;
 
 public class LivroDeNotas {
@@ -38,8 +39,7 @@ public class LivroDeNotas {
 	public String obterMedias() {
 		StringBuilder todasAsMedias = new StringBuilder();
 		for (int i = 0; i < qtdeAlunos; i++) {
-			todasAsMedias.append(String.format("Aluno %d: %.2f\n", i + 1,
-					medias[i]));
+			todasAsMedias.append(String.format("Aluno %d: %.2f\n", i + 1, medias[i]));
 		}
 		return todasAsMedias.toString();
 	}
@@ -74,32 +74,32 @@ public class LivroDeNotas {
 	public double desvioPadraoMedias() {
 		return Math.sqrt(varianciaMedias());
 	}
-	
+
 	public double maiorNota() {
 		double maiorNota = notas1[0];
-		for(int i=0; i<qtdeAlunos; i++) {
-			if(notas1[i] < maiorNota ) {
+		for (int i = 0; i < qtdeAlunos; i++) {
+			if (notas1[i] < maiorNota) {
 				maiorNota = notas1[i];
 			}
-			if(notas2[i] < maiorNota ) {
+			if (notas2[i] < maiorNota) {
 				maiorNota = notas2[i];
 			}
 		}
 		return maiorNota;
 	}
-	
+
 	public double segundaMaiorNota() {
 		int contador = 0;
 		double segMaiorNota = notas1[0];
-		for(int i=0; i<qtdeAlunos; i++) {
-			if(notas1[i] < segMaiorNota && contador <=2) {
+		for (int i = 0; i < qtdeAlunos; i++) {
+			if (notas1[i] < segMaiorNota && contador <= 2) {
 				segMaiorNota = notas1[i];
 			}
-			if(notas2[i] < segMaiorNota ) {
+			if (notas2[i] < segMaiorNota) {
 				segMaiorNota = notas2[i];
 			}
 		}
 		return segMaiorNota;
-		
+
 	}
 }
